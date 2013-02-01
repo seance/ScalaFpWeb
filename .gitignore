@@ -1,6 +1,6 @@
 .project
 .classpath
-.DS_STORE
+.DS_Store
 *.class
 *.log
 
