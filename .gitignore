@@ -1,3 +1,6 @@
+.project
+.classpath
+.DS_STORE
 *.class
 *.log
 
