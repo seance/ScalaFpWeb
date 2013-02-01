@@ -1,0 +1,27 @@
+<classpath>
+  <classpathentry output="target/scala-2.9.2/classes" path="src/main/scala" kind="src"></classpathentry>
+  <classpathentry output="target/scala-2.9.2/test-classes" path="src/test/scala" kind="src"></classpathentry>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/net.databinder/unfiltered-filter_2.9.2/jars/unfiltered-filter_2.9.2-0.6.7.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/net.databinder/unfiltered_2.9.2/jars/unfiltered_2.9.2-0.6.7.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/net.databinder/unfiltered-util_2.9.2/jars/unfiltered-util_2.9.2-0.6.7.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/Toolbox/play-1.2.4/framework/lib/commons-codec-1.4.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/net.databinder/unfiltered-jetty_2.9.2/jars/unfiltered-jetty_2.9.2-0.6.7.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-webapp/jars/jetty-webapp-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-xml/jars/jetty-xml-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-servlet/jars/jetty-servlet-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-security/jars/jetty-security-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/javax.servlet/servlet-api/jars/servlet-api-2.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-continuation/jars/jetty-continuation-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-7.6.0.v20120127.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/net.databinder/unfiltered-json_2.9.2/jars/unfiltered-json_2.9.2-0.6.7.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/net.liftweb/lift-json_2.9.1/jars/lift-json_2.9.1-2.4.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.3.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/jvii/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.9.1.jar" kind="lib"></classpathentry>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"></classpathentry>
+  <classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"></classpathentry>
+  <classpathentry path="bin" kind="output"></classpathentry>
+</classpath>
