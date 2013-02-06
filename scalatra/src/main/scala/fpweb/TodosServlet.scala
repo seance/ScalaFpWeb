@@ -5,7 +5,6 @@ import net.liftweb.json._
 import net.liftweb.json.Serialization._
 import java.util.concurrent.atomic.AtomicInteger
 
-
 class TodosServlet extends ScalatraServlet with CorsHelpers with JsonHelpers {
   
   val idseq = new AtomicInteger(1)
