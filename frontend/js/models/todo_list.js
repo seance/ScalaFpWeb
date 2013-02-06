@@ -14,7 +14,7 @@
 
       TodoList.prototype.model = Todo;
 
-      TodoList.prototype.url = 'http://localhost:8000/todos';
+      TodoList.prototype.url = 'http://localhost:8080/todos';
 
       TodoList.prototype.toggleAll = function(completed) {
         return this.each(function(todo) {

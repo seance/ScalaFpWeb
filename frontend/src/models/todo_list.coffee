@@ -2,8 +2,7 @@ define ['bacon', 'backbone', 'underscore', 'models/todo', 'localstorage'], (Baco
 
   class TodoList extends Backbone.Collection
     model: Todo
-    url: 'http://localhost:8000/todos'
-    #localStorage: new Backbone.LocalStorage('todos-bacon')
+    url: 'http://localhost:8080/todos'
 
     toggleAll: (completed) -> @each (todo) -> todo.save completed: completed
 
