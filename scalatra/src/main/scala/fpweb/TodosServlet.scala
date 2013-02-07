@@ -14,11 +14,11 @@ class TodosServlet extends ScalatraServlet with CorsHelpers with JsonHelpers {
     Ok(Json(todos.values), headers = cors)
   }
   
-  post("/todos") {
+  post("/todos") { synchronized {
     val id = idseq.getAndIncrement
     todos = todos + (id -> read[Todo](request.body).copy(id = id))
     Created(headers = cors)
-  }
+  }}
   
   get("/todos/:id") {
     todos.get(params("id").toInt)
@@ -26,16 +26,16 @@ class TodosServlet extends ScalatraServlet with CorsHelpers with JsonHelpers {
     	.getOrElse(NotFound(headers = cors))
   }
   
-  put("/todos/:id") {
+  put("/todos/:id") { synchronized {
     val id = params("id").toInt
     todos = todos + (id -> read[Todo](request.body).copy(id = id))
     Ok(headers = cors)
-  }
+  }}
   
-  delete("/todos/:id") {
+  delete("/todos/:id") { synchronized {
     todos = todos - params("id").toInt
     Ok(headers = cors)
-  }
+  }}
 
   notFound {
     BadRequest(headers = cors)
