@@ -47,7 +47,7 @@ object Todos extends Service[Request, Response] {
 object Browser extends SimpleFilter[Request, Response] {
   def apply(req: Request, service: Service[Request, Response]) = {
     req.method -> Path(req.path) match {
-      case GET -> Root / "favicon.ico" => status(NOT_FOUND) //  :/ / "favicon.ico"
+      case GET -> Root / "favicon.ico" => status(NOT_FOUND)
       case OPTIONS -> _ => status(OK).map { r =>
           r.allow = Seq(HEAD, GET, PUT, POST, DELETE, OPTIONS)
           r
