@@ -1,7 +1,6 @@
 package fpweb
 
 import spray.routing.SimpleRoutingApp
-import spray.routing.RequestContext
 import spray.httpx.marshalling.Marshaller
 import spray.httpx.unmarshalling.Unmarshaller
 import spray.http._
@@ -70,12 +69,12 @@ object Todos extends App with SimpleRoutingApp with TodoJsonMarshalling {
     }
   }
   
-  def allowCors(f: RequestContext => Unit) = {
+  def allowCors = {
     respondWithHeaders(
         "Access-Control-Allow-Origin" -> "http://localhost:7000",
         "Access-Control-Allow-Headers" -> "Origin, X-Requested-With, Content-Type, Accept",
         "Access-Control-Allow-Methods" -> "HEAD, GET, PUT, POST, DELETE, OPTIONS"
-    )(f)
+    )
   }
   
   implicit def header(t: Tuple2[String, String]): HttpHeader = RawHeader(t._1, t._2)
