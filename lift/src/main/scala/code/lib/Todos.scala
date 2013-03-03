@@ -13,7 +13,7 @@ object Todos extends RestHelper with TodosHelper {
   val idseq = new AtomicInteger(1)
   var todos = Map.empty[Int, Todo]
   
-  def todosPF: DispatchPF = {
+  def todosPF: DispatchPF = "todos" :: Nil prefix {
     case JsonGet(Nil, _) =>
       decompose(todos.values)
       
@@ -51,7 +51,7 @@ object Todos extends RestHelper with TodosHelper {
   }
 
   serve(corsPF(browserPF))
-  serve("todos" :: Nil prefix corsPF(todosPF))
+  serve(corsPF(todosPF))
 }
 
 trait TodosHelper {
