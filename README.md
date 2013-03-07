@@ -10,9 +10,9 @@ You can serve the frontend directory from any HTTP server on port 7000, or use c
 Scalatra
 --------------------
 
-"__Scalatra is a simple, accessible and free web micro-framework.
+_"Scalatra is a simple, accessible and free web micro-framework.
 
-It combines the power of the JVM with the beauty and brevity of Scala, helping you quickly build high-performance web sites and APIs.__"
+It combines the power of the JVM with the beauty and brevity of Scala, helping you quickly build high-performance web sites and APIs."_
 
 ### Factoids
 ### Opinions
