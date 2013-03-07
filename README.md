@@ -68,5 +68,5 @@ _"The High Velocity Web Framework For Java and Scala"_
 * Developed by Guillaume Bort & Typesafe
 
 ### Opinions
-Play Framework elbowed its way into the JVM web scene quite spectacularly, winning solid recognition in the Scala world by being adopted as a part of the Typesafe umbrella. Very practically oriented, Play's external routing DSL has some limitations comparing with some of the latest crop of pure Scala frameworks.
+Play Framework elbowed its way into the JVM web scene quite spectacularly, winning solid recognition in the Scala world by being adopted as a part of the Typesafe umbrella in its version 2.x incarnation. Very practically oriented, Play's external routing DSL has some limitations compared with some of the latest crop of pure Scala frameworks, especially in functional composition.
 
