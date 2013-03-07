@@ -30,8 +30,8 @@ _"Finagle is an extensible network stack for the JVM, used to construct highly c
 
 ### Factoids
 * Protocol agnostic; not only HTTP
-* For now only for Scala 2.9
 * Futures based on own abstraction; influenced the Scala 2.10 standard
+* For now, only for Scala 2.9
 * Developed by Twitter
 
 ### Opinions
@@ -44,10 +44,10 @@ _"Lift is the most powerful, most secure web framework available today. There ar
 
 ### Factoids
 * One of the most established Scala web frameworks
-* Servlet based
-* For now only for Scala 2.9
+* Servlet/Filter based
 * Emphasis on server templated web applications, with many supporting modules
 * Own implementations for Actors, Futures, etc
+* For now, only for Scala 2.9
 * Developed by David Pollak & team
 
 ### Opinions
@@ -70,3 +70,49 @@ _"The High Velocity Web Framework For Java and Scala"_
 ### Opinions
 Play Framework elbowed its way into the JVM web scene quite spectacularly, winning solid recognition in the Scala world by being adopted as a part of the Typesafe umbrella in its version 2.x incarnation. Very practically oriented, Play's external routing DSL has some limitations compared with some of the latest crop of pure Scala frameworks, especially in functional composition.
 
+Unfiltered
+----------
+
+_"Unfiltered is a toolkit for servicing HTTP requests in Scala. It provides a consistent vocabulary for handing requests on various server backends, without impeding direct access to their native interfaces."_
+
+### Factoids
+* Minimalistic HTTP toolkit; well suited for REST APIs
+* Modular structure for request response cycle Servlets on Jetty, async with Netty
+* Available for Scala 2.10
+* Developed by Nathan Hamblen & contributors
+
+### Opinions
+Unfiltered's elegant and modular structure provides a highly composable set of abstractions. The DSL is very idiomatic Scala. With Unfiltered, you will however need to hand-pick your own stack for more expansive applications.
+
+BlueEyes
+--------
+
+_"A lightweight Web 3.0 framework for Scala, featuring a purely asynchronous architecture, extremely high-performance, massive scalability, high usability, and a functional, composable design."_
+
+### Factoids
+* Full stack web framework for building RESTful services
+* Unifies the programming model by taking the hardest path - async byte streams
+* Inspired by Sinatra and Scalatra, but quite different
+* Implementation utilizes some bleeding edge stuff e.g. from Scalaz
+* Unfortunately, somewhat lacking in documentation and subject to rapid change
+* For now, only for Scala 2.9
+* Developed by John A. De Goes & contributors
+
+### Opinions
+BlueEyes' concept brings delicious FP to Scalatra's lightweight syntax. However, BlueEyes' "hard mode" asynchronous byte stream approach, combined with intricate type level manipulation unfortunately leads to somewhat brittle compositions, while necessitating an advanced level of understanding of Scala's type system. A more up-to-date and complete documentation would be a great boon to hopeful BlueEyes adopters.
+
+Spray
+-----
+
+_"A suite of scala libraries for building and consuming RESTful web services on top of Akka: lightweight, asynchronous, non-blocking, actor-based, testable"_
+
+### Factoids
+* Especially suited for RESTful services
+* Brings first-class integration with Akka as a key feature
+* Borrows many concepts from BlueEyes
+* Highly modular, exceptionally lucid structure
+* Available for Scala 2.10
+* Developed by Mathias Doenitz & contributors
+
+### Opinions
+Spray feels like BlueEyes' somewhat more mature sibling. Forgoing async byte streams as the one truth, Spray sidesteps some of the hard problems faced by BlueEyes. The project's neat modular structure lends to understanding it. Spray's model embraces FP - this is evident in how the main service abstraction builds a kind of a monadic IO action, encoded as a `RequestContext => Unit` (`main :: IO ()`, anyone?). The documentation is rather feature-oriented, while a good tutorial seems hard to find.
