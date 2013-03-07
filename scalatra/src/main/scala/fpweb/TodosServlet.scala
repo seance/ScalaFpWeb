@@ -38,7 +38,7 @@ class TodosServlet extends ScalatraServlet with CorsHelpers with JsonHelpers {
   }}
 
   notFound {
-    BadRequest(headers = cors)
+    NotFound(headers = cors)
   }
   
   implicit val formats: Formats = DefaultFormats + new Serializer[Todo] {
