@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Todos
+GET     /todos                      controllers.Todos.list
+POST	/todos						controllers.Todos.create
+GET		/todos/:id					controllers.Todos.get(id: Int)
+PUT		/todos/:id					controllers.Todos.update(id: Int)
+DELETE	/todos/:id					controllers.Todos.delete(id: Int)
+
+# Browser
+GET		/favicon.ico				controllers.Browser.favicon
+OPTIONS	/*any						controllers.Browser.options(any)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
