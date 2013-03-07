@@ -1,6 +1,11 @@
-ScalaFpWeb
-==========
+Scala Web study
+===============
 
-Trying out various Scala web frameworks with some FP tilt
+A small study of various Scala web frameworks/toolkits, while keeping an eye open for FP (Functional Programming) opportunities.
 
-Testing GitHub inline editing
+The `frontend` directory contains a Bacon.js / Backbone.js based frontend for the Todos application, copied from [pyykkis](https://github.com/pyykkis)'s TodoMVC example.
+
+Second level heading
+--------------------
+
+### Level 3 heading
