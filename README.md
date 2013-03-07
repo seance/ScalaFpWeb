@@ -55,3 +55,18 @@ Conceived in the early days of Scala, Lift suffers somewhat from duplicating fun
 
 Play Framework 2.1
 ------------------
+
+_"The High Velocity Web Framework For Java and Scala"_
+
+### Factoids
+* More a full platform than library - server, classloader, compiler
+* Now part of the Typesafe Stack from Typesafe - the company with Scala's creator Martin Odersky
+* Integrates with Akka, also part of the Typesafe Stack
+* Incorporates advanced features, such as Web Sockets and Iteratee I/O
+* Quick development turnaround with on-the-fly compile and redeploy
+* Available for Scala 2.10
+* Developed by Guillaume Bort & Typesafe
+
+### Opinions
+Play Framework elbowed its way into the JVM web scene quite spectacularly, winning solid recognition in the Scala world by being adopted as a part of the Typesafe umbrella. Very practically oriented, Play's external routing DSL has some limitations comparing with some of the latest crop of pure Scala frameworks.
+
