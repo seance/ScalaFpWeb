@@ -1,11 +1,18 @@
 Scala Web study
 ===============
 
-A small study of various Scala web frameworks/toolkits, while keeping an eye open for FP (Functional Programming) opportunities.
+A small study of various Scala web frameworks/toolkits for implementing a RESTful API, while keeping an eye open for FP (Functional Programming) opportunities.
 
-The `frontend` directory contains a Bacon.js / Backbone.js based frontend for the Todos application, copied from [pyykkis](https://github.com/pyykkis)'s TodoMVC example.
+The `frontend` directory contains a Bacon.js / Backbone.js based frontend for the Todos application, copied from [pyykkis](https://github.com/pyykkis)'s TodoMVC example. The other directories contain backend implementations using the various frameworks.
 
-Second level heading
+You can serve the frontend directory from any HTTP server on port 7000, or use curl to test the backends.
+
+Scalatra
 --------------------
 
-### Level 3 heading
+__"Scalatra is a simple, accessible and free web micro-framework.
+
+It combines the power of the JVM with the beauty and brevity of Scala, helping you quickly build high-performance web sites and APIs."__
+
+### Factoids
+### Opinions
