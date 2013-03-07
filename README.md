@@ -18,7 +18,7 @@ _"Scalatra is a simple, accessible and free web micro-framework. It combines the
 * HTTP oriented, in design and implementation
 * Mutable state based routing definition DSL
 * Available for Scala 2.10
-* Actively developed, latest version 2.2.0 as of writing
+* Actively developed by team
 
 ### Opinions
 Simple, effective and proven, yet rather only embraces Scala's OO nature without much FP utility. This is of course in line with Sinatra's Ruby language, but makes functional composition more difficult.
@@ -36,3 +36,22 @@ _"Finagle is an extensible network stack for the JVM, used to construct highly c
 
 ### Opinions
 Finagle's flexibility also means some extra complexity is accrued for implementing a simple HTTP/REST API. Some of Netty's Java idiosyncrasies bleed through to the otherwise nice clean Scala DSL.
+
+Lift
+----
+
+_"Lift is the most powerful, most secure web framework available today. There are Seven Things that distinguish Lift from other web frameworks."_
+
+### Factoids
+* One of the most established Scala web frameworks
+* Servlet based
+* For now only for Scala 2.9
+* Emphasis on server templated web applications, with many supporting modules
+* Own implementations for Actors, Futures, etc
+* Developed by David Pollak & team
+
+### Opinions
+Conceived in the early days of Scala, Lift suffers somewhat from duplicating functionality refined in smaller, more focused libraries. Lift has however pioneered the way for later frameworks, not least with its popular JSON library. Lift's process for creating new projects and some of its syntactic and organizational choices may raise some eyebrows nowadays.
+
+Play Framework 2.1
+------------------
